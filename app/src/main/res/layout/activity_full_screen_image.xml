@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4DBB0"
+    android:orientation="horizontal"
+    tools:context="com.example.myapplication.FullScreenImage">
+
+    <ImageView
+        android:layout_marginLeft="50dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:id="@+id/ImageViewFullScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_foreground"
+
+        />
+
+    <ImageView
+        android:layout_weight="0"
+        android:id="@+id/likebutton"
+        android:layout_gravity="center"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+     android:layout_toEndOf="@+id/ImageViewFullScreen"
+        android:src="@drawable/like" />
+
+
+</LinearLayout >
